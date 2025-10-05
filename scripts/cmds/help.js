@@ -122,8 +122,8 @@ Total: ${matchedCmds.length} command(s)`;
       msg += `\n┍━━━[ INFO ]━━━•◇
 ┋❍ TOTAL CMDS : ${commands.size}
 ┋❍ PREFIX      : ${prefix}
-┋❍ CREATOR     : Ew'r Saim
-┋❍ FACEBOOK    : https://www.facebook.com/ye.bi.nobi.tai.244493
+┋❍ CREATOR     : 𝐑𝐢𝐟𝐚𝐭 𝐀𝐡𝐦𝐞𝐝 🧃
+┋❍ FACEBOOK    : https://m.me/rifat.ahmed.37800
 ┕━━━━━━━━━━━━•◇`;
 
       const reply = await message.reply({
