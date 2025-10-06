@@ -6,7 +6,7 @@ const { getPrefix } = global.utils;
 
 const localImageDir = path.join(__dirname, "cache");
 const localImagePath = path.join(localImageDir, "help.jpg");
-const imageUrl = "https://i.ibb.co.com/qMtj8kTc/d9128dd5d5729fc78421c7752cd889de.jpg";
+const imageUrl = "https://i.ibb.co/7d0xWxvF/Woy0-Cap-QF7.jpg.jpeg";
 
 async function ensureImageCached() {
   if (!fs.existsSync(localImagePath)) {
@@ -40,7 +40,7 @@ module.exports = {
   config: {
     name: "help",
     version: "2.0",
-    author: "MueiD mursalin Rifat",
+    author: "Saimx69x",
     role: 0,
     shortDescription: { en: "Show command list or help info" },
     longDescription: { en: "Show full list or specific command details." },
