@@ -6,7 +6,7 @@ const { getPrefix } = global.utils;
 
 const localImageDir = path.join(__dirname, "cache");
 const localImagePath = path.join(localImageDir, "help.jpg");
-const imageUrl = "https://i.ibb.co/7d0xWxvF/Woy0-Cap-QF7.jpg.jpeg";
+const imageUrl = "https://i.ibb.co.com/qMtj8kTc/d9128dd5d5729fc78421c7752cd889de.jpg";
 
 async function ensureImageCached() {
   if (!fs.existsSync(localImagePath)) {
@@ -40,7 +40,7 @@ module.exports = {
   config: {
     name: "help",
     version: "2.0",
-    author: "Saimx69x",
+    author: "MueiD mursalin Rifat",
     role: 0,
     shortDescription: { en: "Show command list or help info" },
     longDescription: { en: "Show full list or specific command details." },
@@ -122,7 +122,7 @@ Total: ${matchedCmds.length} command(s)`;
       msg += `\n┍━━━[ INFO ]━━━•◇
 ┋❍ TOTAL CMDS : ${commands.size}
 ┋❍ PREFIX      : ${prefix}
-┋❍ CREATOR     : 𝐑𝐢𝐟𝐚𝐭 𝐀𝐡𝐦𝐞𝐝 🧃
+┋❍ CREATOR     : 𝐑𝐢𝐟𝐚𝐭 🧃
 ┋❍ FACEBOOK    : https://m.me/rifat.ahmed.37800
 ┕━━━━━━━━━━━━•◇`;
 
@@ -155,32 +155,4 @@ Total: ${matchedCmds.length} command(s)`;
     if (c.guide) {
       guideText = typeof c.guide === "string"
         ? c.guide
-        : Object.entries(c.guide).map(([lang, val]) => `${lang.toUpperCase()}: ${val}`).join("\n");
-    } else {
-      guideText = "No guide available.";
-    }
-
-    const helpMsg =
-`${header}
-┍━[ 🔎 COMMAND HELP ]
-┋❍ NAME        : ${c.name}
-┋❍ DESCRIPTION : ${description}
-┋❍ ALIASES     : ${aliasText}
-┋❍ VERSION     : ${c.version || "1.0"}
-┋❍ ROLE        : ${roleTextToString(c.role)}
-┋❍ COOLDOWN    : ${c.countDown || c.cooldown || 2}s
-┋❍ AUTHOR      : ${c.author || "Unknown"}
-┕━━━━━━━━━━━━━━✦
-
-┍━[ 📜 USAGE GUIDE ]
-${guideText.split("\n").map(line => "┋❍ " + line).join("\n")}
-┕━━━━━━━━━━━━━━✦`;
-
-    const reply = await message.reply(helpMsg);
-
-    setTimeout(() => {
-      global.GoatBot.api.unsendMessage(reply.messageID);
-      global.GoatBot.api.unsendMessage(event.messageID);
-    }, 45 * 1000);
-  }
-};
+        : Object.entries(c.guide).map(([lang, val]) => `${lang.toUpperCase()}: ${val}`).jo
