@@ -6,7 +6,7 @@ const { getPrefix } = global.utils;
 
 const localImageDir = path.join(__dirname, "cache");
 const localImagePath = path.join(localImageDir, "help.jpg");
-const imageUrl = "https://i.ibb.co/7d0xWxvF/Woy0-Cap-QF7.jpg.jpeg";
+const imageUrl = "https://i.ibb.co.com/qMtj8kTc/d9128dd5d5729fc78421c7752cd889de.jpg";
 
 async function ensureImageCached() {
   if (!fs.existsSync(localImagePath)) {
